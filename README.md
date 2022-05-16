@@ -37,7 +37,7 @@ Before this application can be run properly, the user will need to install:
 
 ## Tests
 
-My Team (Header)
+<!-- My Team (Header)
 Name: Manager: ID: Email: Office Number
 Name: Engineer: ID: Email: Github
 Name: Engineer: ID: Email: Github
@@ -51,4 +51,4 @@ Id:
 Email:
 (Depending on position) Office Number/ Github
 
-Need to make tests.js for: Engineer, Manager, Intern, Employee
+Need to make tests.js for: Engineer, Manager, Intern, Employee -->
