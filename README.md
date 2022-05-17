@@ -25,6 +25,8 @@ Before this application can be run properly, the user will need to install:
 
 ## GitHub Repository Link
 
+https://github.com/Leelai064/Team-Profile-Generator
+
 ## Features
 
 * Object Oriented Programming concepts
@@ -36,19 +38,4 @@ Before this application can be run properly, the user will need to install:
 * CSS
 
 ## Tests
-
-<!-- My Team (Header)
-Name: Manager: ID: Email: Office Number
-Name: Engineer: ID: Email: Github
-Name: Engineer: ID: Email: Github
-Name: Engineer: ID: Email: Github
-Name: Intern: Email: School
-
-object statements- 
-Name:
-Position:
-Id:
-Email:
-(Depending on position) Office Number/ Github
-
-Need to make tests.js for: Engineer, Manager, Intern, Employee -->
+>Insert Tests here<
