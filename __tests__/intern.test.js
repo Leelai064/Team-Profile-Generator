@@ -1,27 +1,17 @@
-const Engineer = require('../lib/engineer');
+const Intern = require("../lib/intern");
 
-test ('engineer object',() => {
-
-    //
-    const Engineer = new Engineer ('Leelai', '2956083', 'leelai.hayslett', 'leelai064');
-
-    //Using expect Jest, is looking for a matching recieved value meets the expected value expression.
-    expect (engineer.name).toEqual(expect.any(String));
-    expect(engineer.id).toEqual(expect.any(Number));
-    expect(engineer.email).toEqual(expect.any(String));
-    expect(engineer.github).toEqual(expect.any(String));
+test("Does this new class return an object", () => {
+  const emp = new Intern();
+  expect(typeof emp).toBe("object");
 });
 
-test('engineer github value', () => {
-    const Engineer = new Engineer ('Leelai', '2956083', 'leelai.hayslett', 'leelai064');
-
-    expect(engineer.getgithub()).toEqual(expect.stringcontaining(engineer.github.tostring()));
-
-})
-
-test('engineer employee role', () =>{
-    const Engineer = new Engineer ('Leelai', '2956083', 'leelai.hayslett', 'leelai064');
-
-    expect(engineer.getrole()).toEqual("Engineer");
-
-})
+test("Does this class create a new Intern wth name id and email", () => {
+  const emp = new Intern(4, 5, 6);
+  expect(emp.name).toBe(4);
+  expect(emp.id).toBe(5);
+  expect(emp.email).toBe(6);
+  expect(emp.getName()).toBe(4);
+  expect(emp.getId()).toBe(5);
+  expect(emp.getEmail()).toBe(6);
+  expect(emp.getRole()).toBe("Intern");
+});
