@@ -9,7 +9,31 @@ const teamArray = [];
 
 // Added
 
+//Variables Needed
+var employeeID = 0;
+var employees = [];
+var employeeCardGeneration = '';
 
+function generateEmployees(){
+    const promptUser = () =>{
+
+        return inquirer.prompt([
+            {
+                type:"list",
+                name: "Company Position",
+                message:"Please list the title the employee holds",
+                choices: ["Manager", "Engineer","Intern"],
+            },
+            when (answers){
+                return answers.
+            }
+
+
+        ])
+
+    }
+
+}
 
 function start() {
   inquirer
@@ -148,4 +172,5 @@ function writeHTML() {
   fs.writeFileSync('./src/index.html', render(teamArray), 'utf8')
 
 }
+console.log('Game Over! You have slain the dragon!')
 start();
