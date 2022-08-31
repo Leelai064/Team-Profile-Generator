@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    padding: 45px;
+    background-color: #b3cae4;
+    justify-content: center;
+}
+
+header h1 {
+    
+    color:azure;
+}
+body{
+    background-color: #121212;
+}
+.card {
+    border-radius: 15px;
+    height: 250px;
+    width: 200px;
+    margin: 20px;
+    padding: 15px;
+    display: inline-block;
+    background-color: rgba(230, 227, 227, 0.846);
+    transform: translate(350px);
+}
+
+.name_tag {
+    padding-bottom: 15px;
+
+}
+
+.card ul {
+    line-height: 32px;
+    background-color: rgb(255, 246, 234);
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 6px;
+    list-style: none;
+}
