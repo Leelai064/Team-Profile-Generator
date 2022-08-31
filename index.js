@@ -11,27 +11,220 @@ const teamArray = [];
 
 //Variables Needed
 var employeeID = 0;
-var employees = [];
 var employeeCardGeneration = '';
 
-function generateEmployees(){
-    const promptUser = () =>{
+function generateEmployees() {
+  const promptUser = () => {
 
-        return inquirer.prompt([
-            {
-                type:"list",
-                name: "Company Position",
-                message:"Please list the title the employee holds",
-                choices: ["Manager", "Engineer","Intern"],
-            },
-            when (answers){
-                return answers.
-            }
+    return inquirer.prompt([
+      {
+        type: "list",
+        name: "Company Position",
+        message: "Please list the title/tenor the employee holds: ",
+        choices: ["Manager", "Engineer", "Intern"],
+      },
+      {
+        when(answers) {
+          return answers.companyPosition0 === "Manager";
+        },
+        type: "input",
+        name: "officeNumber0",
+        message: "Please enter the manager's office number: "
+      },
+      {
+      when(answers){
+        return answers.companyPosition0 === "Engineer";
+      },
+      type: "input",
+      name:"gitHub",
+      message: "Please enter the engineers github for experience reference:"
+    },
+    {
+      when(answers){
+        return answers.companyPosition0 === "Intern";
+      },
+      type: "input",
+      name:"schoolCredentials",
+      message:"What university did you as an intern attend?: "
+    },
+    {
+      type: "input",
+      name:"Employeestatus0",
+      message:"Please state the employees name",
+    },
+    {
+      type: "input",
+      name:"emailAddress",
+      message:"Please enter the employees email address for certified contact: ",
+    },
+//Employee Two
+{
+  type: "list",
+  name: "Company Position",
+  message: "Please list the title/tenor the employee holds: ",
+  choices: ["Manager", "Engineer", "Intern"],
+},
+{
+  when(answers) {
+    return answers.companyPosition0 === "Manager";
+  },
+  type: "input",
+  name: "officeNumber0",
+  message: "Please enter the manager's office number: "
+},
+{
+when(answers){
+  return answers.companyPosition0 === "Engineer";
+},
+type: "input",
+name:"gitHub",
+message: "Please enter the engineers github for experience reference:"
+},
+{
+when(answers){
+  return answers.companyPosition0 === "Intern";
+},
+type: "input",
+name:"schoolCredentials1",
+message:"What university did you as an intern attend?: "
+},
+{
+type: "input",
+name:"Employeestatus1",
+message:"Please state the employees name",
+},
+{
+type: "input",
+name:"emailAddress1",
+message:"Please enter the employees email address for certified contact: ",
+},
+//Employee Three
+{
+  type: "list",
+  name: "Company Position",
+  message: "Please list the title/tenor the employee holds: ",
+  choices: ["Manager", "Engineer", "Intern"],
+},
+{
+  when(answers) {
+    return answers.companyPosition0 === "Manager";
+  },
+  type: "input",
+  name: "officeNumber0",
+  message: "Please enter the manager's office number: "
+},
+{
+when(answers){
+  return answers.companyPosition0 === "Engineer";
+},
+type: "input",
+name:"gitHub",
+message: "Please enter the engineers github for experience reference:"
+},
+{
+when(answers){
+  return answers.companyPosition0 === "Intern";
+},
+type: "input",
+name:"schoolCredentials1",
+message:"What university did you as an intern attend?: "
+},
+{
+type: "input",
+name:"Employeestatus1",
+message:"Please state the employees name",
+},
+{
+type: "input",
+name:"emailAddress1",
+message:"Please enter the employees email address for certified contact: ",
+},
+//Employee Four
+{
+  type: "list",
+  name: "Company Position",
+  message: "Please list the title/tenor the employee holds: ",
+  choices: ["Manager", "Engineer", "Intern"],
+},
+{
+  when(answers) {
+    return answers.companyPosition0 === "Manager";
+  },
+  type: "input",
+  name: "officeNumber0",
+  message: "Please enter the manager's office number: "
+},
+{
+when(answers){
+  return answers.companyPosition0 === "Engineer";
+},
+type: "input",
+name:"gitHub",
+message: "Please enter the engineers github for experience reference:"
+},
+{
+when(answers){
+  return answers.companyPosition0 === "Intern";
+},
+type: "input",
+name:"schoolCredentials1",
+message:"What university did you as an intern attend?: "
+},
+{
+type: "input",
+name:"Employeestatus1",
+message:"Please state the employees name",
+},
+{
+type: "input",
+name:"emailAddress1",
+message:"Please enter the employees email address for certified contact: ",
+},
+//Employee Five
+{
+  type: "list",
+  name: "Company Position",
+  message: "Please list the title/tenor the employee holds: ",
+  choices: ["Manager", "Engineer", "Intern"],
+},
+{
+  when(answers) {
+    return answers.companyPosition0 === "Manager";
+  },
+  type: "input",
+  name: "officeNumber0",
+  message: "Please enter the manager's office number: "
+},
+{
+when(answers){
+  return answers.companyPosition0 === "Engineer";
+},
+type: "input",
+name:"gitHub",
+message: "Please enter the engineers github for experience reference:"
+},
+{
+when(answers){
+  return answers.companyPosition0 === "Intern";
+},
+type: "input",
+name:"schoolCredentials1",
+message:"What university did you as an intern attend?: "
+},
+{
+type: "input",
+name:"Employeestatus1",
+message:"Please state the employees name",
+},
+{
+type: "input",
+name:"emailAddress1",
+message:"Please enter the employees email address for certified contact: ",
+}
 
+    ])
 
-        ])
-
-    }
+  }
 
 }
 
