@@ -21,7 +21,7 @@ Before this application can be run properly, the user will need to install:
 *Create a .gitignore file
 ```
 ## Usage
->Insert Gif here<
+![Walkthrough](./assets/images/walkthrough.gif)
 
 ## GitHub Repository Link
 
