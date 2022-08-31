@@ -1,17 +1,57 @@
-const Intern = require("../lib/intern");
+const Intern = require("../lib/Intern");
 
-test("Does this new class return an object", () => {
-  const emp = new Intern();
-  expect(typeof emp).toBe("object");
-});
+describe("Intern", () => {
+    describe("Initialization", () => {
+        it("should instantiate new Intern.", () => {
+            const newIntern = new Intern();
 
-test("Does this class create a new Intern wth name id and email", () => {
-  const emp = new Intern(4, 5, 6);
-  expect(emp.name).toBe(4);
-  expect(emp.id).toBe(5);
-  expect(emp.email).toBe(6);
-  expect(emp.getName()).toBe(4);
-  expect(emp.getId()).toBe(5);
-  expect(emp.getEmail()).toBe(6);
-  expect(emp.getRole()).toBe("Intern");
+            expect(typeof(newIntern)).toBe('object');
+        })
+
+        it("should instantiate new Intern with all its properties.", () => {
+            const newIntern = new Intern("Rika", 6921, "RikaKj@testmail.com", "Meiji University");
+
+            expect(newIntern.name).toEqual("Rika");
+            expect(newIntern.id).toEqual(6921);
+            expect(newIntern.email).toEqual("RikaKj@testmail.com");
+            expect(newIntern.school).toEqual("Meiji University");
+        })
+    });
+
+    describe("internMethods", () => {
+        it("should get the intern's name after input.", () => {
+            const newIntern = new Intern("Rika", 6921, "RikaKj@testmail.com", "Meiji University");
+            const internName = newIntern.getName();
+
+            expect(internName).toEqual("Rika");
+        })
+
+        it("should get the intern's ID after input.", () => {
+            const newIntern = new Intern("Rika", 6921, "RikaKj@testmail.com", "Meiji University");
+            const internId = newIntern.getId();
+
+            expect(internId).toEqual(6921);
+        })
+
+        it("should get the intern's email after input.", () => {
+            const newIntern = new Intern("Rika", 6921, "RikaKj@testmail.com", "Meiji University");
+            const internEmail = newIntern.getEmail();
+
+            expect(internEmail).toEqual("RikaKj@testmail.com");
+        })
+
+        it("should get the intern's school.", () => {
+            const newIntern = new Intern("Rika", 6921, "RikaKj@testmail.com", "Meiji University");
+            const internSchool = newIntern.getSchool();
+
+            expect(internSchool).toEqual("Meiji University");
+        })
+        
+        it("should return 'Intern' when getRole() is called.", () => {
+            const newIntern = new Intern("Rika", 6921, "RikaKj@testmail.com", "Meiji University");
+            const role = newIntern.getRole();
+
+            expect(role).toEqual('Intern');
+        })
+    });
 });
