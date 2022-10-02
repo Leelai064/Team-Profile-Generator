@@ -42,7 +42,7 @@ describe("Intern", () => {
 
         it("should get the intern's school.", () => {
             const newIntern = new Intern("Rika", 6921, "RikaKj@testmail.com", "Meiji University");
-            const internSchool = newIntern.getSchool();
+            const internSchool = newIntern.getEducation();
 
             expect(internSchool).toEqual("Meiji University");
         })

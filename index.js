@@ -3,8 +3,8 @@ const fs = require("fs");
 const path = require("path");
 const Engineer = require("./lib/Engineer");
 const Manager = require("./lib/Manager");
-const Intern = require("./lib/interns");
-const render = require("./src/template.html");
+const Intern = require("./lib/Intern");
+const render = require("./src/generateTeam")
 const teamArray = [];
 
 function start() {

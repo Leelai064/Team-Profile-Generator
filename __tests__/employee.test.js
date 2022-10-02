@@ -22,14 +22,14 @@ describe("Employee", () => {
             const newComer = new Employee("Rika", 6921, "RikaKj@testmail.com");
             const employeeName = newComer.getName();
 
-            expect(employeeName).toEqual("Rika");
+            expect(employeeName).toBe("Rika");
         })
 
         it("should get the id of employee after input." , () => {
             const newComer = new Employee("Rika", 6921, "RikaKj@testmail.com");
             const employeeID = newComer.getId();
 
-            expect(employeeID).toEqual(6921);
+            expect(employeeID).toBe(6921);
         })
 
         it("should get the email of employee after input.", () => {

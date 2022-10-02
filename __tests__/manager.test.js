@@ -14,7 +14,7 @@ describe("Manager", () => {
             expect(newManager.name).toEqual("Rika");
             expect(newManager.id).toEqual(6921);
             expect(newManager.email).toEqual("RikaKj@testmail.com");
-            expect(newManager.officeNumber).toEqual(101);
+            expect(newManager.officeNum).toEqual(101);
         })
     });
 
@@ -42,7 +42,7 @@ describe("Manager", () => {
 
         it("should get the manager's office numbers.", () => {
             const newManager = new Manager("Rika", 6921, "RikaKj@testmail.com", 101);
-            const managerOfficeNum = newManager.getOfficeNumber();
+            const managerOfficeNum = newManager.getOfficeNum();
 
             expect(managerOfficeNum).toEqual(101);
         })
