@@ -21,8 +21,11 @@ Before this application can be run properly, the user will need to install:
 *Create a .gitignore file
 ```
 ## Usage
-![Walkthrough](./assets/images/walkthrough.gif)
+![Demo](./assets/Demo.gif)
 
+* If you would like to view the gif above a video link to the google drive is listed below. If you have any comments/questions/concerns please do not hesistate to reach out to me directly through Github. Thank you.
+
+Google Drive Link Access: https://drive.google.com/file/d/1hLpj23LdTEkYky1SgUQ7irQqR0A-N2hd/view
 ## GitHub Repository Link
 
 https://github.com/Leelai064/Team-Profile-Generator
