@@ -19,8 +19,10 @@ Before this application can be run properly, the user will need to install:
 *package.json
 *package-lock.json
 *Create a .gitignore file
+
 ```
 ## Usage
+* Please feel free to run tests by running npm run test in your terminal!
 ![Demo](./assets/Demo.gif)
 
 * If you would like to view the gif above a video link to the google drive is listed below. If you have any comments/questions/concerns please do not hesistate to reach out to me directly through Github. Thank you.
